@@ -1,0 +1,12 @@
+Set-ExecutionPolicy Unrestricted -Scope Process
+.\.venv\Scripts\activate
+pip install setuptools==57.5.0
+pip install wheel==0.37.0
+python.exe -m pip install pip==23.0
+pip install gym==0.21.0
+pip install gym-retro
+pip install stable-baselines3==1.6.0
+
+python -m retro.import "C:\Users\lucia\Downloads\Super Mario Bros. (World)"
+
+tensorboard --logdir "board"
